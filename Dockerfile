@@ -23,4 +23,4 @@ RUN wget http://dynamodb-local.s3-website-us-west-2.amazonaws.com/dynamodb_local
   
 # The entrypoint is the dynamodb jar. Default port is 8000.
 EXPOSE 8000
-ENTRYPOINT ["java", "-jar", "DynamoDBLocal.jar"]
+ENTRYPOINT ["java", "-jar", "DynamoDBLocal.jar", "-sharedDb"]
